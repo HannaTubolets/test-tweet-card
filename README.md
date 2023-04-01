@@ -1,9 +1,12 @@
 # Tweet Cards
 
-Сreated interactive cards for tweets. Criteria: ● The layout is fixed in px,
-semantic and valid. ● No errors in the browser console. ● The work is done on
-React. ● Interactivity works according to the specification. ● The code is
-formatted and uncommented.
+Сreated interactive cards for tweets. 
+Criteria: 
+● The layout is fixed in px,semantic and valid. 
+● No errors in the browser console. 
+● The work is done on React. 
+● Interactivity works according to the specification. 
+● The code isformatted and uncommented.
 
 This project was created with the help of
 [Create React App](https://github.com/facebook/create-react-app).
