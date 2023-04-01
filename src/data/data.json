@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "user": "Ann Postman",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "https://i.pravatar.cc/150?img=1"
+  },
+  {
+    "id": 2,
+    "user": "Piter Postman",
+    "tweets": 125,
+    "followers": 4511,
+    "avatar": "https://i.pravatar.cc/150?img=2"
+  },
+  {
+    "id": 3,
+    "user": "Katarina Piterson",
+    "tweets": 445,
+    "followers": 411,
+    "avatar": "https://i.pravatar.cc/150?img=3"
+  },
+  {
+    "id": 4,
+    "user": "John Smith",
+    "tweets": 1023,
+    "followers": 532,
+    "avatar": "https://i.pravatar.cc/150?img=4"
+  },
+  {
+    "id": 5,
+    "user": "Emily Chen",
+    "tweets": 302,
+    "followers": 243,
+    "avatar": "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    "id": 6,
+    "user": "Jacob Lee",
+    "tweets": 189,
+    "followers": 97,
+    "avatar": "https://i.pravatar.cc/150?img=6"
+  },
+  {
+    "id": 7,
+    "user": "Sophia Rodriguez",
+    "tweets": 521,
+    "followers": 678,
+    "avatar": "https://i.pravatar.cc/150?img=7"
+  },
+  {
+    "id": 8,
+    "user": "Nathan Kim",
+    "tweets": 87,
+    "followers": 63,
+    "avatar": "https://i.pravatar.cc/150?img=8"
+  },
+  {
+    "id": 9,
+    "user": "Avery Brown",
+    "tweets": 932,
+    "followers": 789,
+    "avatar": "https://i.pravatar.cc/150?img=9"
+  }
+]
