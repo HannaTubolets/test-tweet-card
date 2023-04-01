@@ -10,7 +10,6 @@ export const App = () => {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        alignItems: 'center',
         // fontSize: 40,
         color: '#010101',
       }}
