@@ -100,4 +100,8 @@ export const Btn = styled.button`
     background-color: #5cd3a8;
     transform: scale(1.05);
   }
+
+  &.active {
+    background-color: #5cd3a8;
+  }
 `;

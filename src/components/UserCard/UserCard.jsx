@@ -46,7 +46,7 @@ const UserCard = ({ user, changeUserData }) => {
         <Btn
           type="button"
           onClick={onClickBtn}
-          className={isFollowing ? 'following' : 'follow'}
+          className={isFollowing ? 'active' : ''}
         >
           {isFollowing ? 'Following' : 'Follow'}
         </Btn>
