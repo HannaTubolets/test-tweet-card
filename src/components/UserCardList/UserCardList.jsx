@@ -6,14 +6,14 @@ import data from 'data/data.json';
 import { CardList } from './UserCardList.styled';
 
 const UserCardList = () => {
-  const [users, setUsers] = useState(storage.load('users-list') ?? data.users);
+  const [users, setUsers] = useState(storage.load('users-list') ?? data);
 
   useEffect(() => {
     storage.save('users-list', users);
   }, [users]);
 
   const changeUserData = (id, followers, isFollow) => {
-    const updateUsers = data.map(user => {
+    const updateUsers = users.map(user => {
       if (user.id === id) {
         user.followers = followers;
         user.isFollowing = isFollow;
