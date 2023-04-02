@@ -10,8 +10,8 @@ const UserCardList = () => {
     storage.save('users-list', users);
   }, [users]);
 
-  const updateUsersData = (id, followers, isFollow) => {
-    const updateUsers = users.map(user => {
+  const changeUserData = (id, followers, isFollow) => {
+    const updateUsers = data.map(user => {
       if (user.id === id) {
         user.followers = followers;
         user.isFollowing = isFollow;
@@ -24,7 +24,7 @@ const UserCardList = () => {
   return (
     <div>
       {data.map(user => (
-        <UserCard key={user.id} user={user} updateUsersData={updateUsersData} />
+        <UserCard key={user.id} user={user} changeUserData={changeUserData} />
       ))}
     </div>
   );

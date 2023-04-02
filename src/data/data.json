@@ -15,10 +15,10 @@
   },
   {
     "id": 3,
-    "user": "Katarina Piterson",
+    "user": "Eric Piterson",
     "tweets": 445,
     "followers": 411,
-    "avatar": "https://i.pravatar.cc/150?img=3"
+    "avatar": "https://i.pravatar.cc/150?img=12"
   },
   {
     "id": 4,
@@ -36,17 +36,17 @@
   },
   {
     "id": 6,
-    "user": "Jacob Lee",
+    "user": "Janny Lee",
     "tweets": 189,
     "followers": 97,
-    "avatar": "https://i.pravatar.cc/150?img=6"
+    "avatar": "https://i.pravatar.cc/150?img=29"
   },
   {
     "id": 7,
     "user": "Sophia Rodriguez",
     "tweets": 521,
     "followers": 678,
-    "avatar": "https://i.pravatar.cc/150?img=7"
+    "avatar": "https://i.pravatar.cc/150?img=21"
   },
   {
     "id": 8,

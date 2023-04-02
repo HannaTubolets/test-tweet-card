@@ -1,36 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-const UserCard = ({ user }) => {
-  const localUser = JSON.parse(localStorage.getItem(user.id));
-  const [isFollowing, setIsFollowing] = useState(
-    localUser ? localUser.isFollowing : false
-  );
-  const [TotalFollowers, setTotalFollowers] = useState(
-    localUser ? localUser.TotalFollowers : user.Followers
-  );
+const UserCard = ({ user, changeUserData }) => {
+  const [followers, setFollowers] = useState(user.followers);
+  const [isFollowing, setIsFollowing] = useState(user.isFollowing);
 
   const onClickBtn = () => {
-    setIsFollowing(!isFollowing);
-    setTotalFollowers(prevTotalFollowers =>
-      isFollowing ? prevTotalFollowers - 1 : prevTotalFollowers + 1
-    );
-  };
+    const newIsFollowing = !isFollowing;
+    setIsFollowing(newIsFollowing);
 
-  useEffect(() => {
-    localStorage.setItem(
-      user.id,
-      JSON.stringify({ isFollowing, TotalFollowers })
-    );
-  }, [isFollowing, TotalFollowers, user.id]);
+    if (newIsFollowing) {
+      setFollowers(followers + 1);
+      changeUserData(user.id, followers + 1, newIsFollowing);
+    } else {
+      setFollowers(followers - 1);
+      changeUserData(user.id, followers - 1, newIsFollowing);
+    }
+  };
 
   return (
     <div>
       <li>
         <img src={user.avatar} alt="avatar" />
         <h1>{user.user}</h1>
-        <p>{user.tweets} tweets</p>
-        <p>{user.followers}Followers</p>
-        <button type="button" onClick={onClickBtn}>
+        <p>{user.tweets} Tweets</p>
+        <p>{followers} Followers</p>
+        <button
+          type="button"
+          onClick={onClickBtn}
+          className={isFollowing ? 'following' : 'follow'}
+        >
           {isFollowing ? 'Following' : 'Follow'}
         </button>
       </li>
