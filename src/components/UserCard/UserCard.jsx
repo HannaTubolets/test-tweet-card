@@ -9,6 +9,7 @@ import {
   UserImg,
   Btn,
   Name,
+  Numbers,
 } from './UserCard.styled';
 
 const UserCard = ({ user, changeUserData }) => {
@@ -33,10 +34,15 @@ const UserCard = ({ user, changeUserData }) => {
       <Card>
         <Logo src={logo} alt="avatar" />
         <UpperImg src={upperImg} alt="avatar" />
-        <UserImg src={user.avatar} width="80" alt="avatar" />
+        <UserImg src={user.avatar} width="100" alt="avatar" />
         <Name>{user.user}</Name>
-        <Txt>{user.tweets} Tweets</Txt>
-        <Txt>{followers} Followers</Txt>
+        <Txt>
+          <Numbers>{user.tweets} </Numbers> Tweets
+        </Txt>
+        <Txt>
+          <Numbers>{new Intl.NumberFormat('en-US').format(followers)}</Numbers>{' '}
+          Followers
+        </Txt>
         <Btn
           type="button"
           onClick={onClickBtn}
