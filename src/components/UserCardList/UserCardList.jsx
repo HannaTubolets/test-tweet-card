@@ -3,6 +3,8 @@ import storage from 'helpers/storage';
 import UserCard from 'components/UserCard/UserCard';
 import data from 'data/data.json';
 
+import { CardList } from './UserCardList.styled';
+
 const UserCardList = () => {
   const [users, setUsers] = useState(storage.load('users-list') ?? data.users);
 
@@ -22,11 +24,11 @@ const UserCardList = () => {
   };
 
   return (
-    <div>
+    <CardList>
       {data.map(user => (
         <UserCard key={user.id} user={user} changeUserData={changeUserData} />
       ))}
-    </div>
+    </CardList>
   );
 };
 
