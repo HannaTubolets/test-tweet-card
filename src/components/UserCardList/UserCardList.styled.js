@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardList = styled.div`
+export const CardList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 24px;

@@ -30,28 +30,26 @@ const UserCard = ({ user, changeUserData }) => {
   };
 
   return (
-    <div>
-      <Card>
-        <Logo src={logo} alt="avatar" />
-        <UpperImg src={upperImg} alt="avatar" />
-        <UserImg src={user.avatar} width="100" alt="avatar" />
-        <Name>{user.user}</Name>
-        <Txt>
-          <Numbers>{user.tweets} </Numbers> Tweets
-        </Txt>
-        <Txt>
-          <Numbers>{new Intl.NumberFormat('en-US').format(followers)}</Numbers>{' '}
-          Followers
-        </Txt>
-        <Btn
-          type="button"
-          onClick={onClickBtn}
-          className={isFollowing ? 'active' : ''}
-        >
-          {isFollowing ? 'Following' : 'Follow'}
-        </Btn>
-      </Card>
-    </div>
+    <Card>
+      <Logo src={logo} alt="avatar" />
+      <UpperImg src={upperImg} alt="avatar" />
+      <UserImg src={user.avatar} width="100" alt="avatar" />
+      <Name>{user.user}</Name>
+      <Txt>
+        <Numbers>{user.tweets} </Numbers> Tweets
+      </Txt>
+      <Txt>
+        <Numbers>{new Intl.NumberFormat('en-US').format(followers)}</Numbers>{' '}
+        Followers
+      </Txt>
+      <Btn
+        type="button"
+        onClick={onClickBtn}
+        className={isFollowing ? 'active' : ''}
+      >
+        {isFollowing ? 'Following' : 'Follow'}
+      </Btn>
+    </Card>
   );
 };
 
