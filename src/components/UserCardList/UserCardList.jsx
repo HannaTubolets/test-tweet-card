@@ -25,7 +25,7 @@ const UserCardList = () => {
 
   return (
     <CardList>
-      {data.map(user => (
+      {users.map(user => (
         <UserCard key={user.id} user={user} changeUserData={changeUserData} />
       ))}
     </CardList>
